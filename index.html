@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Hopeful Message</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      background: #ffffff;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3a8a, #0f172a);
+      color: #f8fafc;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.5s ease-out;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 900px;
+      animation: zoomIn 2s ease-out;
+      line-height: 1.6;
+    }
+
+    .mission {
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    .mission h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .mission p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.25rem;
+      line-height: 1.7;
+    }
+
+    .app {
+      background: #ffffff;
+      color: #0f172a;
+    }
+
+    .app h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .app p {
+      font-size: 1.2rem;
+      max-width: 850px;
+      margin: 0 auto 2rem;
+    }
+
+    .app a.button {
+      display: inline-block;
+      background: #0ea5e9;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .app a.button:hover {
+      background: #0284c7;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #38bdf8;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p, .mission p, .app p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>A Hopeful Message</h1>
+    <p>
+      Proclaiming the Gospel of Jesus Christ through innovative technology, encouraging discipleship, and equipping others in the practical application of God's Word.
+    </p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      <strong>A Hopeful Message</strong>, a project of OTB Holdings, LLC, is dedicated to creating apps that encourage faith, support discipleship, and promote engagement with Scripture. We combine thoughtful design with a heart for ministry to help people grow spiritually, applying God's Word in daily life, and deepening their connection with Christ.
+    </p>
+  </section>
+
+  <!-- App Highlight Section -->
+  <section class="app">
+    <h2>Our First App: BSB Bible</h2>
+    <p>
+      We’re thrilled to launch the <strong>Berean Standard Bible (BSB)</strong> app, available now on the App Store. This is the first step in our journey to provide powerful tools that deepen your faith and bring God’s Word into daily life.
+    </p>
+    <a class="button" href="https://apps.apple.com/us/app/berean-standard-bible-bsb/id6502922832" target="_blank">
+      📖 Download on the App Store
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#">A Hopeful Message is a project of OTB Holdings, LLC</a>
+  </footer>
+
+</body>
+</html>
