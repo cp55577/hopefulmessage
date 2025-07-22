@@ -30,6 +30,14 @@
       color: #f8fafc;
     }
 
+    .hero-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+      animation: logoFadeIn 2s ease-out;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+
     .hero h1 {
       font-size: 4rem;
       font-weight: 800;
@@ -130,6 +138,11 @@
       color: #1e3a8a;
     }
 
+    @keyframes logoFadeIn {
+      0% { opacity: 0; transform: translateY(-30px) scale(0.8); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -141,6 +154,10 @@
     }
 
     @media (max-width: 768px) {
+      .hero-logo {
+        width: 150px;
+        margin-bottom: 1.5rem;
+      }
       .hero h1 {
         font-size: 2.5rem;
       }
@@ -154,6 +171,7 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <img src="logo.png" alt="A Hopeful Message Logo" class="hero-logo">
     <h1>A Hopeful Message</h1>
     <p>
       Proclaiming the Gospel of Jesus Christ through innovative technology, encouraging discipleship, and equipping others in the practical application of God's Word.
@@ -181,7 +199,7 @@
 
   <!-- Footer -->
   <footer>
-    <a href="#">A Hopeful Message is a project of OTB Holdings, LLC</a>
+    A Hopeful Message is a project of OTB Holdings, LLC
   </footer>
 
 </body>
