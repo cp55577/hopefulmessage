@@ -36,6 +36,8 @@
       margin-bottom: 1rem;
       animation: fadeIn 1.5s ease-out;
       letter-spacing: -1px;
+      color: #fbbf24;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .hero p {
@@ -54,6 +56,7 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      color: #1e3a8a;
     }
 
     .mission p {
@@ -72,6 +75,7 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      color: #1e3a8a;
     }
 
     .app p {
@@ -82,17 +86,21 @@
 
     .app a.button {
       display: inline-block;
-      background: #0ea5e9;
+      background: linear-gradient(135deg, #f59e0b, #eab308);
       color: white;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
+      font-weight: 600;
       border-radius: 0.5rem;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3);
     }
 
     .app a.button:hover {
-      background: #0284c7;
+      background: linear-gradient(135deg, #d97706, #f59e0b);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(245, 158, 11, 0.4);
     }
 
     footer {
@@ -110,7 +118,16 @@
     }
 
     footer a:hover {
-      color: #38bdf8;
+      color: #fbbf24;
+    }
+
+    strong {
+      color: #d97706;
+      font-weight: 700;
+    }
+
+    .mission strong {
+      color: #1e3a8a;
     }
 
     @keyframes fadeIn {
